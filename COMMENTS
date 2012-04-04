@@ -1,0 +1,5 @@
+In mainwindow.cpp, diceRoll can only get values 1, 5, 9, and 13. It could be more modular to have a dice rolling function that rolls one 6-sided dice: (rand() % 6) + 1.  Then call it twice and add the values together.  This allows for an easy way to check for rolling doubles (in traditional monopoly rolling a double means move and roll again, or get out of jail). This dice roll function could have support for different sided dice, but that may be overkill.  It would be more usefull for use in other games that way though.
+
+In the same file, the currentPlace goes up to 36, it should be a constant, not typed directly in.  Also, in Monopoly, the board is 40 spaces long all the way around.
+
+These are just small things, but that's all the problems I could find at this stage in the project, because I can't tell the structure of the program yet.
